@@ -1,0 +1,24 @@
+{
+  "clients": [
+    {
+      "name": "MIKA MIKIC",
+      "code": 12335,
+      "duration": 12,
+      "numberOfAccounts": 2,
+      "dateOfCreation": "1992-01-01",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Pera Peric",
+      "code": 12345,
+      "duration": 12,
+      "numberOfAccounts": 2,
+      "dateOfCreation": "1992-01-01"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
