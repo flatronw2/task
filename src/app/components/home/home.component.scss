@@ -1,66 +1,114 @@
-.container{
-    width: 100%;
-    position: relative;
+.container {
+  width: 100%;
+  position: relative;
 
-    #img{
-        width: 100%;
-    }
+  #img {
+    width: 100%;
+  }
 }
 
 .homeBtn {
-    background-color: #fff200;
-    padding: 18px;
-    font-size: 24px;
-    position: absolute;
-    bottom: 25%;
-    right: 35%;
+  background-color: #fff200;
+  padding: 18px;
+  font-size: 24px;
+  position: absolute;
+  bottom: 25%;
+  right: 35%;
 }
 .padding {
-    padding: 50px 300px;
+  padding: 50px 300px;
 }
 .row {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    .card{
-        padding: 25px;
-        text-align: start;
-        margin: 0 25px;
-        background-color: #f2f4f6;
-        width: 30%;
+  .card {
+    padding: 25px;
+    text-align: start;
+    margin: 0 25px;
+    background-color: #f2f4f6;
+    width: 30%;
+  }
+  .card:hover {
+    cursor: pointer;
+    background-color: #fff200;
+  }
+}
+
+h1 {
+  font-size: 34px;
+}
+
+p {
+  padding: 15px 0px;
+  font-size: 24px;
+  line-height: 35px;
+}
+.col {
+  display: flex;
+  justify-content: space-around;
+}
+.aplication {
+  margin: 15px;
+  background-color: #f2f4f6;
+  margin-bottom: 150px;
+  img {
+    border-end-start-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 350px;
+    width: 100%;
+  }
+
+  .btnApl {
+    top: 10px;
+    right: 10px;
+    color: black;
+    background-color: #fff200;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+    .padding{
+        padding: 20px 50px;
     }
-    .card:hover{
-        cursor: pointer;
-        background-color: #fff200;
-    }
-}
-
-h1{
-    font-size: 34px;
-}
-
-p{
-    padding: 15px 0px;
-    font-size: 24px;
-    line-height: 35px;
-}
-.col{
-    display: flex;
-    justify-content: space-around;
-}
-.aplication{
-    margin: 15px;
-    background-color: #f2f4f6 ;
-    img{
-        border-radius: 15px;
-        height: 350px;
-        width:100%;
+  .card {
+  
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
     }
 
-    .btnApl{
-        top: 10px;
-        right: 10px;
-        color: black;
-        background-color: #fff200;
+    p {
+      padding:0px;
+      font-size: 24px;
+      line-height: 25px;
+      margin: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+    .homeBtn{
+        padding: 14px;
+        font-size: 14px;
+    }
+    .padding{
+        padding: 20px;
+    }
+    .row {
+       display: grid;
+       grid-template-columns: repeat(1,1fr);
+       justify-items: center;
+       .card{
+        margin-top: 20px;
+       }
+    }
+    
+}
+
+@media screen and (max-width: 591px) {
+    .col{
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }

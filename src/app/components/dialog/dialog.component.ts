@@ -64,7 +64,7 @@ export class DialogComponent implements OnInit {
   updateClient(){
     this.clientService.updateClient(this.clientForm.value, this.editData.id)
     .subscribe({
-      next: () => {
+      next: (res) => {
         alert("Product updated");
         this.clientForm.reset();
         this.dialogRef.close('Update');
