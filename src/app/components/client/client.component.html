@@ -68,6 +68,11 @@
     ></mat-paginator>
   </div>
 
+
+  <div *ngIf="!dataSource" style="color:red ; font-weight: bold; font-size: large;">
+    No records found
+  </div>
+
   <button class="addBtn" mat-raised-button  (click)="openDialog()">Dodaj klijenta</button>
 </div>
 
