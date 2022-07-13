@@ -45,7 +45,7 @@ export class DialogComponent implements OnInit {
   addClient() {
     if (!this.editData) {
       if (this.clientForm.valid) {
-        this.clientService.postClients(this.clientForm.value).subscribe({
+        this.clientService.postClient(this.clientForm.value).subscribe({
           next: () => {
             alert('Uspesno');
             this.clientForm.reset();

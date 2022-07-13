@@ -8,7 +8,7 @@ import { DialogComponent } from './components/dialog/dialog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http'
 import { HomeComponent } from './components/home/home.component';
-import { MaterialModule } from './material.module';
+import { MaterialModule } from './shared/material.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 

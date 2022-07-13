@@ -24,7 +24,7 @@ export class ApiService {
     ))
   }
 
-  public postClients(client: Client): Observable<Client> {
+  public postClient(client: Client): Observable<Client> {
     return this.http.post<Client>('http://localhost:3000/clients', client).pipe(map((res:any) => {
       return res }
     ))

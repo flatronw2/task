@@ -18,18 +18,18 @@
 .padding {
   padding: 50px 300px;
 }
-.row {
+.cards-row {
   display: flex;
   justify-content: center;
 
-  .card {
+  .card-column {
     padding: 25px;
     text-align: start;
     margin: 0 25px;
     background-color: #f2f4f6;
     width: 30%;
   }
-  .card:hover {
+  .card-column:hover {
     cursor: pointer;
     background-color: #fff200;
   }
@@ -44,11 +44,11 @@ p {
   font-size: 24px;
   line-height: 35px;
 }
-.col {
+.card-container {
   display: flex;
   justify-content: space-around;
 }
-.aplication {
+.aplication-card {
   margin: 15px;
   background-color: #f2f4f6;
   margin-bottom: 150px;
