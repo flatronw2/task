@@ -4,27 +4,9 @@
 </div>
 
 <div class="cards-row padding">
-    <div class="card-column">
-        <h1>iRacun - online racun</h1>
-        <p>Budite jedan od prvih korisnika
-        "iRacun" tekuceg racuna i oktrijte sve 
-        pogodnosti koje on nudi.
-    </p>
-    <p>&#9658;</p>
-    </div>
-    <div class="card-column">
-        <h1>iKes kredit</h1>
-        <p>Novac na racunu za 30 minuta.
-        Minimalna dokumentacija 100%
-        online
-    </p>
-    <p>&#9658;</p>
-    </div>
-    <div class="card-column">
-        <h1>Lokacija filijala</h1>
-        <p>Ne lutajte ulicama u potrazi za
-        filijalom ili bankomatom. Pronadjite
-        najblize lokacije banke u  samo nekoliko klikova
+    <div class="card-column" *ngFor="let card of cards">
+        <h1>{{card.title}}</h1>
+        <p>{{card.description}}
     </p>
     <p>&#9658;</p>
     </div>
